@@ -1,0 +1,455 @@
+/* pc 버전 main page */
+:root{
+    --main-green: rgb(206, 218, 204);
+    --main-pink: rgb(242, 225, 231);
+    --main-brown: rgb(218, 206, 192);
+    --main-darkgreen: rgb(48, 60, 48);
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{list-style-type: none;}
+
+a{
+    color: #333;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-image: url("/images/bg-forest.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* header */
+header{
+    width: 100%;
+    display: flex;
+    background-color: var(--main-brown);
+    align-items: center;
+    padding: 1%;
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /* opacity: 0.95; */
+}
+header h1{
+    width: 13%;
+    margin-left: 3%;
+}
+nav{
+    width: 75%;
+    padding-left: 5%;
+    /* padding-right: 5%; */
+    /* border: 1px solid #999; */
+}
+nav .depth1{
+    /* display: flex; */
+    justify-content: space-around;
+
+    flex-direction: column;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 47%;
+    /* padding-top: 10px; */
+    padding: 10px;
+    padding-right: 14%;
+    background-color: var(--main-brown);
+    display: none;
+}
+nav .depth1.active{
+    display: block;
+}
+nav .depth1 > li{
+    width: 100%;
+    position: relative;
+}
+nav .depth1 > li > a{
+    width: 100%;
+    font-weight: bold;
+}
+/* @media(min-width: 977px){
+    nav .depth1 > li > a{font-size: 1.1em;}
+    header h1{font-size: 2em;}
+    nav .depth2 > li > a{font-size: 0.9em;}
+} */
+@media(max-width: 767px){
+    nav .depth1 > li > a{font-size: 0.7em;}
+    header h1{font-size: 1em;}
+    nav .depth2 > li > a{font-size: 0.5em;}
+}
+
+/* header icon */
+header .depth1-icon{
+    width: 40%;
+    display: flex;
+    margin-right: 5%;
+}
+.depth1-icon li > a > img{
+    width: 90%;
+}
+/* 수정 */
+.depth1-icon li button{
+    background: none;
+    border: none;
+}
+.depth1-icon li button img{
+    width: 90%;
+}
+.depth1-icon li{
+    margin-left: 5%;
+}
+
+/* depth2 */
+nav .depth2{
+    width: 100%;
+    padding-left: 20%;
+    left: -20%;
+    /* padding-bottom: 50%; */
+    padding-top: 10%;
+}
+nav .depth2 > li{
+    padding: 10% 0px;
+}
+nav .depth2 > li > a:hover{
+    color: brown;
+    font-weight: 800;
+}
+/* depth2 위치 조정 */
+nav .depth2{
+    position: absolute;
+    width: 100%;
+    /* border: 1px solid #999; */
+    background: var(--main-brown);
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+nav .depth2.active{
+    height: 285px;
+    opacity: 1;
+}
+
+
+
+
+/* main-banner */
+.main{
+    /* background: #eee; */
+    height: 100%;
+}
+#main-banner .slider .sliders > a >img{
+    width: 100%;
+    /* display: block; */
+}
+.slider{
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+}
+.slider .sliders{
+    /* position: absolute; */
+    height: 100%;
+}
+.slider .sliders a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+.slider .sliders a.active{
+    opacity: 1;
+}
+
+
+
+
+/* brand-info */
+.brand-info{
+    width: 100%;
+    padding-top: 60%;
+    padding-bottom: 5%;
+}
+.brand-info #brand #info{
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    opacity: 0;
+}
+.brand-info #info p{
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #eee;
+}
+
+
+
+/* main item */
+.main-item{
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--main-darkgreen);
+}
+#items{
+    display: flex;
+    text-align: center;
+}
+#item1{
+    width: 100%;
+    display: block;
+    padding-top: 5%;
+    opacity: 0;
+    animation-duration: 1.5s;
+}
+#items .itemInfo{
+    color: #fff;
+    /* font-size: 1em; */
+    flex-direction: row;
+    padding: 3%;
+    width: 100%;
+}
+@media(min-width: 977px){
+    #items .itemInfo{font-size: 1em;}
+    .main-item h1{font-size: 5em;}
+}
+@media(max-width: 900px){
+    #items .itemInfo{font-size: 0.8em;}
+    .main-item h1{font-size: 4em;}
+}
+.itemInfo > p{
+    padding-top: 5%;
+}
+.itemInfo > h3 > a{
+    color: #fff;
+}
+#item1 a img, #item2 a img{
+    width: 65%;
+}
+#item2{
+    width: 100%;
+    display: block;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    opacity: 0;
+    animation-duration: 1.5s;
+}
+.main-item h1{
+    color: #fff;
+    /* font-size: 5em; */
+    margin-left: 42%;
+    padding-top: 2%;
+}
+
+
+
+
+
+/* item menu */
+.menu{
+    background-color: rgb(48, 60, 48);
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+}
+.menu h1{
+    padding: 1%;
+    color: #fff;
+}
+.menu h4{
+    color: #ddd;
+}
+#item-menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
+.florist, .green, .woody, .aromatic, .chupre{
+    position: relative;
+    width: 14%;
+}
+.florist img, .green img, .woody img, .aromatic img, .chupre img{
+    width: 100%;
+    border-radius: 50%;
+}
+#item-menu a > span{
+    position: absolute;
+    top: 42%;
+    left: 30%;
+    z-index: 9;
+    /* font-size: 1.7em; */
+    color: #fff;
+    font-weight: bold;
+}
+@media(min-width: 1060px){
+    #item-menu a > span{font-size: 1.7em;}
+}
+@media(max-width: 900px){
+    #item-menu a > span{font-size: 0.7em;}
+}
+#item-menu .aromatic a span{
+    opacity: 1;
+    left: 25%;
+}
+#item-menu .chupre a span{
+    left: 17%;
+}
+#item-menu > div{
+    opacity: 0.5;
+}
+#item-menu > div.active{
+    opacity: 1;
+    transition: 0.7s;
+}
+
+
+
+
+/* 매장안내 */
+.way{
+    width: 85%;
+    position: relative;
+    background-color: var(--main-brown);
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.way img{
+    width: 50%;
+    margin-right: 0px;
+}
+.way button{
+    position: absolute;
+    bottom: 7%;
+    left: 30%;
+    width: 17%;
+    height: 4%;
+    background-color: #815c43;
+    padding: 1%;
+    padding-bottom: 2.5%;
+    border: none;
+}
+@media(min-width: 1060px){
+    .way a button{font-size: 1em;}
+    .way #storeinfo > p{font-size: 1.1em;}
+}
+@media(max-width: 900px){
+    .way a button{font-size: 0.5em;}
+    .way #storeinfo > p{font-size: 0.5em;}
+}
+.way a button{
+    /* font-size: 18px; */
+    /* font-size: 1.1em; */
+    color: #fff;
+    font-weight: 600;
+}
+.way #storeinfo{
+    margin-bottom: 7%;
+    margin-left: 2%;
+}
+.way #storeinfo > p{
+    /* font-size: 1.1em; */
+    margin-top: 10%;
+    color: #624836;
+    font-style: italic;
+}
+#storeinfo a button:hover{
+    background: none;
+    outline: 1px solid #815c43;
+    transition: 0.2s;
+    color: #815c43;
+}
+
+
+
+
+/* footer */
+footer{
+    background-color: var(--main-darkgreen);
+    color: #fff;
+    padding: 2% 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footerInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer h1{
+    margin-left: 20%;
+}
+/* sns */
+.footerInfo #sns{
+    width: 50%;
+    margin-left: 20%;
+}
+.footerInfo #sns li{
+    margin: 5%;
+}
+.footerInfo #sns li a{
+    color: #fff;
+}
+.footerInfo #sns li a:hover{
+    font-weight: bold;
+}
+/* contact */
+.footerInfo #contact{
+    width: 50%;
+    margin-left: 10%;
+}
+.footerInfo #contact li{
+    margin: 5%;
+}
+.footerInfo #contact li > span{
+    padding-right: 5%;
+}
+footer > p{
+    text-align: center;
+}
+@media(min-width: 1060px){
+    footer h1{font-size: 1.7em;}
+    .footerInfo #sns li a{font-size: 1em;}
+    .footerInfo #contact li{font-size: 1em;}
+    footer > p{font-size: 1em;}
+}
+@media(max-width: 900px){
+    footer h1{font-size: 1em;}
+    .footerInfo #sns li a{font-size: 0.8em;}
+    .footerInfo #contact li{font-size: 0.8em;}
+    footer > p{font-size: 0.8em;}
+}
+
+
+
+/* 맨 위로 */
+#top{
+    opacity: 0;
+}
+#top.active{
+    opacity: 1;
+    transition: 1s;
+}
+#top .upto{
+    position: fixed;
+    z-index: 999;
+    bottom: 3%;
+    right: 1%;
+    width: 91px;
+    height: 98px;
+    text-indent: -9999pc;
+    background: url(/images/naver.png) no-repeat -306px -426px;
+}
+#top .upto:hover{
+    background-position: -412px -426px;
+}
