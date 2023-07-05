@@ -18,7 +18,7 @@ a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
-    background-image: url("/images/bg-forest.jpg");
+    background-image: url("../images/bg-forest.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -184,7 +184,7 @@ nav .depth2.active{
 }
 .brand-info #info p{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 0.9em;
     font-style: italic;
     margin-bottom: 5%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -217,14 +217,6 @@ nav .depth2.active{
     padding: 3%;
     width: 100%;
 }
-@media(min-width: 977px){
-    #items .itemInfo{font-size: 1em;}
-    .main-item h1{font-size: 5em;}
-}
-@media(max-width: 900px){
-    #items .itemInfo{font-size: 0.8em;}
-    .main-item h1{font-size: 4em;}
-}
 .itemInfo > p{
     padding-top: 5%;
 }
@@ -247,6 +239,18 @@ nav .depth2.active{
     /* font-size: 5em; */
     margin-left: 42%;
     padding-top: 2%;
+}
+@media(min-width: 977px){
+    #items .itemInfo{font-size: 1em;}
+    .main-item h1{font-size: 5em;}
+}
+@media(max-width: 900px){
+    #items .itemInfo{font-size: 0.8em;}
+    .main-item h1{font-size: 4em;}
+}
+@media(max-width: 767px){
+    #items .itemInfo{font-size: 0.5em;}
+    .main-item h1{font-size: 2.5em;}
 }
 
 
@@ -276,7 +280,7 @@ nav .depth2.active{
 }
 .florist, .green, .woody, .aromatic, .chupre{
     position: relative;
-    width: 14%;
+    width: 15%;
 }
 .florist img, .green img, .woody img, .aromatic img, .chupre img{
     width: 100%;
@@ -285,11 +289,26 @@ nav .depth2.active{
 #item-menu a > span{
     position: absolute;
     top: 42%;
-    left: 30%;
+    left: 20%;
     z-index: 9;
     /* font-size: 1.7em; */
     color: #fff;
     font-weight: bold;
+}
+#item-menu .aromatic a span{
+    opacity: 1;
+    left: 15%;
+}
+#item-menu .chupre a span{
+    top: 35%;
+    left: 7%;
+}
+#item-menu > div{
+    /* opacity: 0.5; */
+}
+#item-menu > div.active{
+    opacity: 1;
+    transition: 0.7s;
 }
 @media(min-width: 1060px){
     #item-menu a > span{font-size: 1.7em;}
@@ -297,19 +316,8 @@ nav .depth2.active{
 @media(max-width: 900px){
     #item-menu a > span{font-size: 0.7em;}
 }
-#item-menu .aromatic a span{
-    opacity: 1;
-    left: 25%;
-}
-#item-menu .chupre a span{
-    left: 17%;
-}
-#item-menu > div{
-    opacity: 0.5;
-}
-#item-menu > div.active{
-    opacity: 1;
-    transition: 0.7s;
+@media(max-width: 767px){
+    #item-menu a > span{font-size: 0.4em;}
 }
 
 
@@ -317,36 +325,30 @@ nav .depth2.active{
 
 /* 매장안내 */
 .way{
-    width: 85%;
+    width: 90%;
     position: relative;
     background-color: var(--main-brown);
     display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 5%;
     margin-bottom: 3%;
+
+    flex-direction: column-reverse;
 }
 .way img{
-    width: 50%;
+    width: 100%;
     margin-right: 0px;
 }
 .way button{
     position: absolute;
-    bottom: 7%;
-    left: 30%;
-    width: 17%;
-    height: 4%;
+    bottom: 50%;
+    right: 10%;
+    width: 30%;
+    height: 5%;
     background-color: #815c43;
     padding: 1%;
     padding-bottom: 2.5%;
     border: none;
-}
-@media(min-width: 1060px){
-    .way a button{font-size: 1em;}
-    .way #storeinfo > p{font-size: 1.1em;}
-}
-@media(max-width: 900px){
-    .way a button{font-size: 0.5em;}
-    .way #storeinfo > p{font-size: 0.5em;}
 }
 .way a button{
     /* font-size: 18px; */
@@ -363,12 +365,22 @@ nav .depth2.active{
     margin-top: 10%;
     color: #624836;
     font-style: italic;
+
+    font-size: 0.3em;
 }
 #storeinfo a button:hover{
     background: none;
     outline: 1px solid #815c43;
     transition: 0.2s;
     color: #815c43;
+}
+@media(min-width: 1060px){
+    .way a button{font-size: 1em;}
+    .way #storeinfo > p{font-size: 1.1em;}
+}
+@media(max-width: 900px){
+    .way a button{font-size: 0.5em;}
+    .way #storeinfo > p{font-size: 0.5em;}
 }
 
 
@@ -387,12 +399,12 @@ footer{
     justify-content: space-around;
 }
 footer h1{
-    margin-left: 20%;
+    margin-left: 5%;
 }
 /* sns */
 .footerInfo #sns{
     width: 50%;
-    margin-left: 20%;
+    margin-left: 2%;
 }
 .footerInfo #sns li{
     margin: 5%;
@@ -406,16 +418,18 @@ footer h1{
 /* contact */
 .footerInfo #contact{
     width: 50%;
-    margin-left: 10%;
+    /* margin-left: 3%; */
 }
 .footerInfo #contact li{
-    margin: 5%;
+    /* margin: 5%; */
+    margin-top: 7%;
 }
 .footerInfo #contact li > span{
     padding-right: 5%;
 }
 footer > p{
     text-align: center;
+    margin-top: 5%;
 }
 @media(min-width: 1060px){
     footer h1{font-size: 1.7em;}
@@ -435,6 +449,8 @@ footer > p{
 /* 맨 위로 */
 #top{
     opacity: 0;
+
+    display: none;
 }
 #top.active{
     opacity: 1;

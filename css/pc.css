@@ -18,7 +18,7 @@ a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
-    background-image: url("../images/bg-forest.jpg");
+    background-image: url("/images/bg-forest.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -80,18 +80,19 @@ header .depth1-icon{
 }
 
 .depth1-icon li > a > img{
-    width: 80%;
-}
-/* 수정 */
-.depth1-icon li button{
-    background: none;
-    border: none;
-}
-.depth1-icon li button img{
-    width: 90%;
+    width: 70%;
 }
 .depth1-icon li{
     margin-left: 5%;
+}
+/* 모바일 메뉴버튼 */
+.depth1-icon li button{
+    background: none;
+    border: none;
+    display: none;
+}
+.depth1-icon li button img{
+    width: 90%;
 }
 
 /* depth2 */

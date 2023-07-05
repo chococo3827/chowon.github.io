@@ -81,10 +81,10 @@ $(function(){
     })
 })
 
-
 // 모바일 버전 메뉴 나타내기
 $(function(){
+    // $('nav .depth1').hide();
     $('#m_menu').click(function(){
-        $('nav .depth1').addClass('active');
+        $('nav .depth1').slideToggle('fast');
     })
 })
