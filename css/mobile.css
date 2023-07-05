@@ -202,6 +202,7 @@ nav .depth2.active{
 #items{
     display: flex;
     text-align: center;
+    flex-direction: column;
 }
 #item1{
     width: 100%;
@@ -229,8 +230,8 @@ nav .depth2.active{
 #item2{
     width: 100%;
     display: block;
-    margin-top: 20%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 15%;
     opacity: 0;
     animation-duration: 1.5s;
 }
@@ -249,7 +250,7 @@ nav .depth2.active{
     .main-item h1{font-size: 4em;}
 }
 @media(max-width: 767px){
-    #items .itemInfo{font-size: 0.5em;}
+    #items .itemInfo{font-size: 0.7em;}
     .main-item h1{font-size: 2.5em;}
 }
 
@@ -280,7 +281,7 @@ nav .depth2.active{
 }
 .florist, .green, .woody, .aromatic, .chupre{
     position: relative;
-    width: 15%;
+    width: 26%;
 }
 .florist img, .green img, .woody img, .aromatic img, .chupre img{
     width: 100%;
@@ -289,19 +290,20 @@ nav .depth2.active{
 #item-menu a > span{
     position: absolute;
     top: 42%;
-    left: 20%;
+    left: 30%;
     z-index: 9;
     /* font-size: 1.7em; */
     color: #fff;
     font-weight: bold;
 }
 #item-menu .aromatic a span{
-    opacity: 1;
-    left: 15%;
+    align-items: center;
+    left: 25%;
 }
 #item-menu .chupre a span{
-    top: 35%;
-    left: 7%;
+    align-items: center;
+    /* top: 40%; */
+    left: 15%;
 }
 #item-menu > div{
     /* opacity: 0.5; */
@@ -317,7 +319,7 @@ nav .depth2.active{
     #item-menu a > span{font-size: 0.7em;}
 }
 @media(max-width: 767px){
-    #item-menu a > span{font-size: 0.4em;}
+    /* #item-menu a > span{font-size: 0.6em;} */
 }
 
 

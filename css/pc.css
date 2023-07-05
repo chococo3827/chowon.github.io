@@ -18,7 +18,7 @@ a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
-    background-image: url("../images/bg-forest.jpg");
+    background-image: url("/images/bg-forest.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -132,14 +132,15 @@ nav .depth2.active{
 /* main-banner */
 .main{
     /* background: #eee; */
-    height: 100%;
+    position: relative;
+    
+    height: auto;
 }
 #main-banner .slider .sliders > a >img{
     width: 100%;
     /* display: block; */
 }
 .slider{
-    position: relative;
     width: 100%;
     /* height: 100%; */
 }
@@ -165,8 +166,10 @@ nav .depth2.active{
 /* brand-info */
 .brand-info{
     width: 100%;
-    padding-top: 60%;
+    margin-top: 60%;
     padding-bottom: 5%;
+
+    height: auto;
 }
 .brand-info #brand #info{
     width: 100%;
