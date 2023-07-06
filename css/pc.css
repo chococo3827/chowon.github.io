@@ -212,14 +212,6 @@ nav .depth2.active{
     padding: 3%;
     width: 100%;
 }
-@media(min-width: 977px){
-    #items .itemInfo{font-size: 1em;}
-    .main-item h1{font-size: 5em;}
-}
-@media(max-width: 900px){
-    #items .itemInfo{font-size: 0.8em;}
-    .main-item h1{font-size: 4em;}
-}
 .itemInfo > p{
     padding-top: 5%;
 }
@@ -242,6 +234,14 @@ nav .depth2.active{
     /* font-size: 5em; */
     margin-left: 42%;
     padding-top: 2%;
+}
+@media(min-width: 977px){
+    #items .itemInfo{font-size: 1.2em;}
+    .main-item h1{font-size: 5em;}
+}
+@media(max-width: 900px){
+    #items .itemInfo{font-size: 0.8em;}
+    .main-item h1{font-size: 4em;}
 }
 
 

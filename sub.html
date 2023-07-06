@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rest in nature-sub</title>
-    <link rel="stylesheet" href="css/sub-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/sub-pc.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="script/sub.js"></script>
 </head>
 <body>
@@ -69,5 +71,58 @@
             <li><a href="./"><img src="images/search.png" alt=""></a></li>
         </ul>
     </header>
+
+    <div class="main">
+        <section id="brand">
+            <img src="images/brand.jpg" alt="brand">
+            <div id="info">
+                <h1>The Way to Inner Rest</h1>
+                <h3>Memories that are remembered with invisible scents</h3>
+                <h3>woud become a good stimulus and remain strong.</h3>
+                <h4>눈에 보이지 않는 향기로 기억하는 추억은 좋은 자극이 되어 강렬하게 남습니다.</h4>
+            </div>
+        </section>
+    </div>
+
+    <div class="contents">
+        <h1>Florist Fabric Spray</h1>
+        <section class="content">
+            <article id="movie_info">
+                <h3>꽃 한 송이를 그대로</h3>
+                <p>신선한 꽃을 한 아름 따다 만든 풍성한 꽃다발</p>
+                <p>여린 꽃망울이 품은 잎사귀와 줄기의 싱그러움까지 선물합니다.</p>
+                <p>입구에서부터 설렘의 향기가 가득한 꽃 시장으로 떠나보세요.</p>
+            </article>
+            <article id="movie">
+                <img src="images/movie.gif" alt="movie">
+            </article>
+        </section>
+    </div>
+
+    <div class="product">
+        <div id="products">
+            <div class="slide"><img src="" alt=""></div>
+            <div class="slide"><img src="" alt=""></div>
+            <div class="slide"><img src="" alt=""></div>
+            <div class="slide"><img src="" alt=""></div>
+            <div class="slide"><img src="" alt=""></div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('#products').bxSlider({
+                slideWidth: 300,
+                minSlides: 2,
+                maxSlides: 3,
+                moveSlides: 1,
+                slideMargin: 10
+            });
+        });
+    </script>
+
+    <div class="shop">
+        <img src="" alt="">
+        <a href="index.html"><button>SHOP NOW</button></a>
+    </div>
 </body>
 </html>

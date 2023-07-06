@@ -1,0 +1,173 @@
+/* pc 버전 sub page */
+:root{
+    --main-green: rgb(206, 218, 204);
+    --main-pink: rgb(242, 225, 231);
+    --main-brown: rgb(218, 206, 192);
+    --main-darkgreen: rgb(48, 60, 48);
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{list-style-type: none;}
+
+a{
+    color: #333;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    /* background-image: url("/images/bg-forest.jpg"); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* header */
+header{
+    width: 100%;
+    display: flex;
+    background-color: var(--main-brown);
+    align-items: center;
+    padding: 1%;
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /* opacity: 0.95; */
+}
+header h1{
+    width: 15%;
+    margin-left: 3%;
+}
+nav{
+    width: 75%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* border: 1px solid #999; */
+}
+nav .depth1{
+    display: flex;
+    justify-content: space-around;
+}
+nav .depth1 > li{
+    width: 100%;
+    position: relative;
+}
+nav .depth1 > li > a{
+    /* width: 100%; */
+    font-weight: bold;
+}
+
+/* header icon */
+header .depth1-icon{
+    width: 10%;
+    display: flex;
+    margin-right: 5%;
+}
+.depth1-icon li > a > img{
+    width: 30px;
+}
+
+/* depth2 */
+nav .depth2{
+    width: 100%;
+    padding-left: 20%;
+    left: -20%;
+    /* padding-bottom: 50%; */
+    padding-top: 10%;
+}
+nav .depth2 > li{
+    padding: 10% 0px;
+}
+nav .depth2 > li > a{
+    font-size: 14px;
+}
+nav .depth2 > li > a:hover{
+    color: brown;
+    font-weight: 800;
+}
+/* depth2 위치 조정 */
+nav .depth2{
+    position: absolute;
+    width: 100%;
+    /* border: 1px solid #999; */
+    background: var(--main-brown);
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+nav .depth2.active{
+    height: 270px;
+    opacity: 1;
+}
+
+
+
+/* main */
+.main{
+    width: 100%;
+    background-color: var(--main-darkgreen);
+    position: relative;
+    padding: 2%;
+}
+.main #brand{
+    display: flex;
+}
+#brand img{
+    width: 45%;
+    margin-left: 10%;
+}
+#brand #info{
+    position: absolute;
+    color: #fff;
+    top: 25%;
+    right: 17%;
+}
+#brand #info h1{
+    margin-bottom: 10%;
+}
+#brand #info h3{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#brand #info h4{
+    margin-top: 4%;
+    opacity: 0.8;
+}
+
+
+
+/* 동영상 */
+.contents{
+    width: 100%;
+    background-color: var(--main-darkgreen);
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.contents h1{
+    text-align: center;
+    color: #fff;
+}
+.contents .content{
+    display: flex;
+    margin-top: 5%;
+}
+.content #movie{
+    width: 30%;
+}
+.content #movie img{
+    width: 100%;
+}
+.content #movie_info{
+    color: #eee;
+    margin-right: -15%;
+    margin-top: 2%;
+}
+.content #movie_info h3{
+    margin-bottom: 5%;
+}
+.content #movie_info p{
+    margin-bottom: 8%;
+}
