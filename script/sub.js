@@ -9,4 +9,11 @@ $(function(){
             $('.depth2').removeClass('active');
         }
     )
-})
+    $('#products').bxSlider({
+        slideWidth: 615,
+        minSlides: 1,
+        maxSlides: 3,
+        moveSlides: 1,
+        // slideMargin: 7
+    });
+});
