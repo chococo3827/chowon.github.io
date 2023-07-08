@@ -231,3 +231,102 @@ nav .depth2.active{
     font-style: italic;
     text-decoration: underline;
 }
+
+
+
+
+/* show now */
+.shop{
+    width: 100%;
+    background-color: var(--main-darkgreen);
+    overflow: hidden;
+    position: relative;
+}
+.shop img{
+    max-width: 100%;
+    transition: all 0.4s linear;
+    filter: brightness(40%);
+}
+.shop img:hover{
+    transform: scale(1.2);
+}
+.shop a{
+    position: absolute;
+    color: #fff;
+    top: 80%;
+    left: 45%;
+}
+.shop a button{
+    font-size: 1.2vw;
+    color: #fff;
+    background-color: var(--main-darkgreen);
+    border: none;
+    width: 150%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.shop a button:hover{
+    outline: 3px solid #fff;
+    background-color: rgba(48, 60, 48, 0);
+    color: var(--main-green);
+    transition: 0.2s;
+}
+
+
+
+/* footer */
+footer{
+    background-color: var(--main-darkgreen);
+    color: #fff;
+    padding: 2% 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 5%;
+}
+.footerInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer h1{
+    margin-left: 20%;
+}
+/* sns */
+.footerInfo #sns{
+    width: 50%;
+    margin-left: 20%;
+}
+.footerInfo #sns li{
+    margin: 5%;
+}
+.footerInfo #sns li a{
+    color: #fff;
+}
+.footerInfo #sns li a:hover{
+    font-weight: bold;
+}
+/* contact */
+.footerInfo #contact{
+    width: 50%;
+    margin-left: 10%;
+}
+.footerInfo #contact li{
+    margin: 5%;
+}
+.footerInfo #contact li > span{
+    padding-right: 5%;
+}
+footer > p{
+    text-align: center;
+}
+@media(min-width: 1060px){
+    footer h1{font-size: 1.7em;}
+    .footerInfo #sns li a{font-size: 1em;}
+    .footerInfo #contact li{font-size: 1em;}
+    footer > p{font-size: 1em;}
+}
+@media(max-width: 900px){
+    footer h1{font-size: 1em;}
+    .footerInfo #sns li a{font-size: 0.8em;}
+    .footerInfo #contact li{font-size: 0.8em;}
+    footer > p{font-size: 0.8em;}
+}
