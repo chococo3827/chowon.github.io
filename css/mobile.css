@@ -15,12 +15,12 @@ ul{list-style-type: none;}
 a{
     color: #333;
     text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
     background-image: url("../images/bg-forest.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino, serif';
 }
 /* header */
 header{
@@ -187,7 +187,6 @@ nav .depth2.active{
     font-size: 0.9em;
     font-style: italic;
     margin-bottom: 5%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #eee;
 }
 
@@ -331,7 +330,7 @@ nav .depth2.active{
     position: relative;
     background-color: var(--main-brown);
     display: flex;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     margin-top: 5%;
     margin-bottom: 3%;
 
@@ -393,7 +392,6 @@ footer{
     background-color: var(--main-darkgreen);
     color: #fff;
     padding: 2% 0%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .footerInfo{
     width: 100%;

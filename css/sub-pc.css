@@ -21,13 +21,16 @@ ul{list-style-type: none;}
 a{
     color: #333;
     text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
     /* background-image: url("/images/bg-forest.jpg"); */
     background-attachment: fixed;
     background-repeat: no-repeat;
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino, serif';
 }
+
+
+
 /* header */
 header{
     width: 100%;
@@ -111,6 +114,8 @@ nav .depth2.active{
 
 
 
+
+
 /* main */
 .main{
     width: 100%;
@@ -124,6 +129,7 @@ nav .depth2.active{
 #brand img{
     width: 45%;
     margin-left: 10%;
+    --animate-duration: 3s;
 }
 #brand #info{
     position: absolute;
@@ -137,8 +143,9 @@ nav .depth2.active{
 }
 #brand #info h3{
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 7%;
     font-size: 1.1vw;
+    margin-bottom: 10%;
 }
 #brand #info h4{
     margin-top: 4%;
@@ -213,8 +220,8 @@ nav .depth2.active{
 }
 #products .slide a div p{
     font-style: italic;
-    padding-top: 3%;
-    font-size: 0.8vw;
+    /* padding-top: 3%; */
+    font-size: 0.85vw;
 }
 .product .bx-wrapper{
     border: none;
@@ -229,7 +236,7 @@ nav .depth2.active{
     padding-bottom: 4%;
     font-size: 2.2vw;
     font-style: italic;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 
@@ -244,10 +251,10 @@ nav .depth2.active{
 }
 .shop img{
     max-width: 100%;
-    transition: all 0.4s linear;
+    transition: all 0.5s linear;
     filter: brightness(40%);
 }
-.shop img:hover{
+.shop img.active{
     transform: scale(1.2);
 }
 .shop a{
@@ -279,7 +286,6 @@ footer{
     background-color: var(--main-darkgreen);
     color: #fff;
     padding: 2% 0%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 5%;
 }
 .footerInfo{

@@ -15,12 +15,12 @@ ul{list-style-type: none;}
 a{
     color: #333;
     text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
     background-image: url("../images/bg-forest.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
+    font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino, serif';
 }
 
 
@@ -182,7 +182,6 @@ nav .depth2.active{
     font-size: 20px;
     font-style: italic;
     margin-bottom: 5%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #eee;
 }
 
@@ -221,6 +220,16 @@ nav .depth2.active{
 #item1 a img, #item2 a img{
     width: 65%;
 }
+/* #item1 a img.img-hover{
+    display: none;
+}
+#item1 a:hover img:first-child{
+    display: none;
+}
+#item1 a:hover img.img-hover{
+    display: block;
+    transition: 0.5s;
+} */
 #item2{
     width: 100%;
     display: block;
@@ -316,9 +325,9 @@ nav .depth2.active{
     position: relative;
     background-color: var(--main-brown);
     display: flex;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     margin-top: 5%;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
 }
 .way img{
     width: 50%;
@@ -337,11 +346,11 @@ nav .depth2.active{
 }
 @media(min-width: 1060px){
     .way a button{font-size: 1em;}
-    .way #storeinfo > p{font-size: 1.1em;}
+    .way #storeinfo > p{font-size: 1.2em;}
 }
 @media(max-width: 900px){
     .way a button{font-size: 0.5em;}
-    .way #storeinfo > p{font-size: 0.5em;}
+    .way #storeinfo > p{font-size: 0.6em;}
 }
 .way a button{
     /* font-size: 18px; */
@@ -374,7 +383,6 @@ footer{
     background-color: var(--main-darkgreen);
     color: #fff;
     padding: 2% 0%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .footerInfo{
     width: 100%;

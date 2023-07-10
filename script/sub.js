@@ -9,6 +9,8 @@ $(function(){
             $('.depth2').removeClass('active');
         }
     )
+
+    // 제품 bxslider
     $('#products').bxSlider({
         slideWidth: 615,
         minSlides: 1,
@@ -16,4 +18,14 @@ $(function(){
         moveSlides: 1,
         // slideMargin: 7
     });
+
+    // shopnow이미지 hover시 크게
+    $('.shop').hover(
+        function(){
+            $('.shop img').addClass('active');
+        },
+        function(){
+            $('.shop img').removeClass('active');
+        }
+    )
 });
