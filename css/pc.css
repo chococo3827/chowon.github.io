@@ -204,7 +204,27 @@ nav .depth2.active{
     opacity: 0;
     animation-duration: 1.5s;
 }
+#item2{
+    width: 100%;
+    display: block;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    opacity: 0;
+    animation-duration: 1.5s;
+}
+#item1 a img, #item2 a img{
+    position: relative;
+}
+#item1 a img.active, #item2 a img.active{
+    filter: brightness(50%);
+    transition: 0.5s;
+}
 #items .itemInfo{
+    position: absolute;
+    top: 30%;
+    font-style: italic;
+    display: none;
+
     color: #fff;
     /* font-size: 1em; */
     flex-direction: row;
@@ -219,24 +239,6 @@ nav .depth2.active{
 }
 #item1 a img, #item2 a img{
     width: 65%;
-}
-/* #item1 a img.img-hover{
-    display: none;
-}
-#item1 a:hover img:first-child{
-    display: none;
-}
-#item1 a:hover img.img-hover{
-    display: block;
-    transition: 0.5s;
-} */
-#item2{
-    width: 100%;
-    display: block;
-    margin-top: 20%;
-    margin-bottom: 5%;
-    opacity: 0;
-    animation-duration: 1.5s;
 }
 .main-item h1{
     color: #fff;

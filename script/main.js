@@ -79,6 +79,28 @@ $(function(){
         $('html, body').animate({scrollTop : 0}, 700);
         return false;
     })
+
+    // best item hover 효과
+    $('#item1 a').hover(
+        function(){
+            $(this).children().addClass('active');
+            $('#item1 .itemInfo').css('display', 'block');
+        },
+        function(){
+            $(this).children().removeClass('active');
+            $('#item1 .itemInfo').css('display', 'none');
+        }
+    )
+    $('#item2 a').hover(
+        function(){
+            $(this).children().addClass('active');
+            $('#item2 .itemInfo').css('display', 'block');
+        },
+        function(){
+            $(this).children().removeClass('active');
+            $('#item2 .itemInfo').css('display', 'none');
+        }
+    )
 })
 
 // 모바일 버전 메뉴 나타내기
