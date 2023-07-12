@@ -153,14 +153,15 @@ nav .depth2.active{
 }
 #brand img{
     width: 45%;
-    margin-left: 50%;
+    /* margin-left: 50%; */
     --animate-duration: 3s;
 }
 #brand #info{
     position: absolute;
     color: #fff;
     top: 15%;
-    right: 10%;
+    /* right: 10%; */
+    left: 5%;
 }
 #brand #info h1{
     margin-bottom: 10%;
@@ -170,12 +171,17 @@ nav .depth2.active{
     /* margin-top: 5%; */
     /* margin-left: 7%; */
     font-size: 1.1vw;
-    margin-bottom: 10%;
+    margin-bottom: 9%;
 }
 #brand #info h4{
     /* margin-top: 4%; */
     opacity: 0.8;
     font-size: 0.9vw;
+}
+@media(max-width: 450px){
+    #brand #info h4{
+        font-size: 0.2em;
+    }
 }
 
 

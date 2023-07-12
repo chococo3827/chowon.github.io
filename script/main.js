@@ -54,6 +54,22 @@ $(function(){
                 $(this).addClass(itemEffect);
             }
         })
+
+        $('#item3').each(function(){
+            const itemOst = $(this).offset().top - 500;
+            const itemEffect = $(this).attr('data-effect');
+            if(sct >= itemOst){
+                $(this).addClass(itemEffect);
+            }
+        })
+
+        $('#item4').each(function(){
+            const itemOst = $(this).offset().top - 500;
+            const itemEffect = $(this).attr('data-effect');
+            if(sct >= itemOst){
+                $(this).addClass(itemEffect);
+            }
+        })
     })
 
     // item menu hover시 opacity 1
@@ -99,6 +115,26 @@ $(function(){
         function(){
             $(this).children().removeClass('active');
             $('#item2 .itemInfo').css('display', 'none');
+        }
+    )
+    $('#item3 a').hover(
+        function(){
+            $(this).children().addClass('active');
+            $('#item3 .itemInfo').css('display', 'block');
+        },
+        function(){
+            $(this).children().removeClass('active');
+            $('#item3 .itemInfo').css('display', 'none');
+        }
+    )
+    $('#item4 a').hover(
+        function(){
+            $(this).children().addClass('active');
+            $('#item4 .itemInfo').css('display', 'block');
+        },
+        function(){
+            $(this).children().removeClass('active');
+            $('#item4 .itemInfo').css('display', 'none');
         }
     )
 })
