@@ -26,7 +26,7 @@ body{
     /* background-image: url("/images/bg-forest.jpg"); */
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino, serif';
+    font-family: 'Gowun Dodum', sans-serif;
 }
 
 
@@ -247,9 +247,7 @@ nav .depth2.active{
     color: #fff;
     text-align: center;
     padding-bottom: 4%;
-    font-size: 2.2vw;
-    font-style: italic;
-    /* text-decoration: underline; */
+    font-size: 3vw;
 }
 
 

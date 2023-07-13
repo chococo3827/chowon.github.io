@@ -20,7 +20,7 @@ body{
     background-image: url("../images/bg-forest.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino, serif';
+    font-family: 'Gowun Dodum', sans-serif;
 }
 
 
@@ -107,7 +107,7 @@ nav .depth2 > li{
     padding: 10% 0px;
 }
 nav .depth2 > li > a:hover{
-    color: brown;
+    color: #8B4F1D;
     font-weight: 800;
 }
 /* depth2 위치 조정 */
@@ -217,14 +217,14 @@ nav .depth2.active{
 #item3{
     width: 50%;
     display: block;
-    opacity: 1;
+    opacity: 0;
     animation-duration: 1.5s;
 }
 #item3 a img{width: 100%;}
 #item4{
     width: 50%;
     display: block;
-    opacity: 1;
+    opacity: 0;
     animation-duration: 1.5s;
 }
 #item4 a img{width: 100%;}
@@ -241,7 +241,7 @@ nav .depth2.active{
 #items .itemInfo{
     position: absolute;
     top: 30%;
-    font-style: italic;
+    /* font-style: italic; */
     display: none;
 
     color: #fff;
