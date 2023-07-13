@@ -148,8 +148,8 @@ nav .depth2.active{
     /* display: block; */
 }
 .slider{
-    background-color: #eee;
-    height: 240px;
+    /* background-color: #eee; */
+    height: 300px;
 }
 .slider .sliders{
     width: 100%;
@@ -245,6 +245,7 @@ nav .depth2.active{
 #item1 a img, #item2 a img, 
 #item3 a img, #item4 a img{
     position: relative;
+    filter: brightness(70%);
 }
 #item1 a img.active, #item2 a img.active,
 #item3 a img.active, #item4 a img.active{
@@ -255,7 +256,7 @@ nav .depth2.active{
     position: absolute;
     top: 30%;
     font-style: italic;
-    display: none;
+    /* display: none; */
 
     color: #fff;
     /* font-size: 1em; */
