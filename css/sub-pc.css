@@ -347,3 +347,27 @@ footer > p{
     .footerInfo #contact li{font-size: 0.8em;}
     footer > p{font-size: 0.8em;}
 }
+
+
+
+/* 맨 위로 */
+#top{
+    opacity: 0;
+}
+#top.active{
+    opacity: 1;
+    transition: 1s;
+}
+#top .upto{
+    position: fixed;
+    z-index: 999;
+    bottom: 3%;
+    right: 1%;
+    width: 91px;
+    height: 98px;
+    text-indent: -9999pc;
+    background: url(/images/naver2.jpeg) no-repeat -306px -426px;
+}
+#top .upto:hover{
+    background-position: -412px -426px;
+}

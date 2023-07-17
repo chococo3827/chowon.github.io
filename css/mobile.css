@@ -1,9 +1,9 @@
 /* pc 버전 main page */
 :root{
-    --main-green: rgb(206, 218, 204);
-    --main-pink: rgb(242, 225, 231);
-    --main-brown: rgb(218, 206, 192);
-    --main-darkgreen: rgb(48, 60, 48);
+    --main-green: #cedacc;
+    --main-pink: #f2e1e7;
+    --main-brown: #dacec0;
+    --main-darkgreen: #303c30;
 }
 *{
     margin: 0 auto;

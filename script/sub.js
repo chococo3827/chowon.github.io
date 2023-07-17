@@ -28,6 +28,20 @@ $(function(){
             $('.shop img').removeClass('active');
         }
     )
+
+    // 스크롤 내리면 올리기 버튼 나타나기
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 200){
+            $('#top').addClass('active');
+        }else{
+            $('#top').removeClass('active');
+        }
+    })
+    // 스크롤 부드럽게 올리기
+    $('#top .upto').click(function(){
+        $('html, body').animate({scrollTop : 0}, 700);
+        return false;
+    })
 });
 
 // 모바일 버전 메뉴 나타내기
