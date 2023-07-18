@@ -3,7 +3,7 @@
     --main-green: rgb(206, 218, 204);
     --main-pink: rgb(242, 225, 231);
     --main-brown: rgb(218, 206, 192);
-    --main-darkgreen: rgb(48, 60, 48);
+    --main-darkgreen: #303c30;
 }
 
 /* html{cursor: url(../images/cursor.png) 20 30, url(../images/cursor2.png) 20 30, url(../images/cursor3.png) 20 30,auto} */
@@ -225,7 +225,7 @@ nav .depth2.active{
 }
 #products .slide a img{
     width: 95%;
-    border: 1px solid black;
+    border: none
 }
 #products .slide a div span{
     font-weight: bold;
@@ -366,7 +366,7 @@ footer > p{
     width: 91px;
     height: 98px;
     text-indent: -9999pc;
-    background: url(/images/naver2.jpeg) no-repeat -306px -426px;
+    background: url(/images/naver2.png) no-repeat -306px -426px;
 }
 #top .upto:hover{
     background-position: -412px -426px;
