@@ -43,6 +43,9 @@ header h1{
     width: 15%;
     margin-left: 3%;
 }
+header h1 img{
+    width: 100%;
+}
 nav{
     width: 75%;
     padding-left: 5%;
@@ -122,7 +125,7 @@ nav .depth2{
     transition: 0.3s;
 }
 nav .depth2.active{
-    height: 285px;
+    height: 300px;
     opacity: 1;
 }
 

@@ -37,11 +37,14 @@ header{
     /* opacity: 0.95; */
 }
 header h1{
-    width: 13%;
+    width: 70%;
     margin-left: 3%;
 }
+header h1 img{
+    width: 100%;
+}
 nav{
-    width: 75%;
+    width: 30%;
     padding-left: 5%;
     /* padding-right: 5%; */
     /* border: 1px solid #999; */
@@ -53,10 +56,10 @@ nav .depth1{
     flex-direction: column;
     position: absolute;
     margin-top: 5%;
-    margin-left: 47%;
+    right: 0;
     /* padding-top: 10px; */
     padding: 10px;
-    padding-right: 14%;
+    /* padding-right: 14%; */
     background-color: var(--main-brown);
     display: none;
 }
@@ -66,6 +69,7 @@ nav .depth1.active{
 nav .depth1 > li{
     width: 100%;
     position: relative;
+    padding-bottom: 10%;
 }
 nav .depth1 > li > a{
     width: 100%;
@@ -107,9 +111,11 @@ header .depth1-icon{
 nav .depth2{
     width: 100%;
     padding-left: 20%;
-    left: -20%;
+    right: 20%;
     /* padding-bottom: 50%; */
     padding-top: 10%;
+
+    display: none;
 }
 nav .depth2 > li{
     padding: 10% 0px;
