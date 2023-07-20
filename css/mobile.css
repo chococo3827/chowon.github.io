@@ -57,6 +57,7 @@ nav .depth1{
     position: absolute;
     margin-top: 5%;
     right: 0;
+    top: 60%;
     /* padding-top: 10px; */
     padding: 10px;
     /* padding-right: 14%; */
@@ -155,7 +156,7 @@ nav .depth2.active{
 }
 .slider{
     /* background-color: #eee; */
-    height: 350px;
+    height: 300px;
 }
 .slider .sliders{
     width: 100%;
@@ -189,7 +190,8 @@ nav .depth2.active{
 .brand-info #brand #info{
     width: 100%;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 10%;
     opacity: 0;
 }
 .brand-info #info p{
