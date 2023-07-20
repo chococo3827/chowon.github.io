@@ -97,43 +97,43 @@ $(function(){
     })
 
     // best item hover 효과
-    $('#item1 a').hover(
+    $('#item1').hover(
         function(){
-            $(this).children().addClass('active');
+            $(this).children().children().addClass('active');
             $('#item1 .itemInfo').css('display', 'block');
         },
         function(){
-            $(this).children().removeClass('active');
+            $(this).children().children().removeClass('active');
             $('#item1 .itemInfo').css('display', 'none');
         }
     )
-    $('#item2 a').hover(
+    $('#item2').hover(
         function(){
-            $(this).children().addClass('active');
+            $(this).children().children().addClass('active');
             $('#item2 .itemInfo').css('display', 'block');
         },
         function(){
-            $(this).children().removeClass('active');
+            $(this).children().children().removeClass('active');
             $('#item2 .itemInfo').css('display', 'none');
         }
     )
-    $('#item3 a').hover(
+    $('#item3').hover(
         function(){
-            $(this).children().addClass('active');
+            $(this).children().children().addClass('active');
             $('#item3 .itemInfo').css('display', 'block');
         },
         function(){
-            $(this).children().removeClass('active');
+            $(this).children().children().removeClass('active');
             $('#item3 .itemInfo').css('display', 'none');
         }
     )
-    $('#item4 a').hover(
+    $('#item4').hover(
         function(){
-            $(this).children().addClass('active');
+            $(this).children().children().addClass('active');
             $('#item4 .itemInfo').css('display', 'block');
         },
         function(){
-            $(this).children().removeClass('active');
+            $(this).children().children().removeClass('active');
             $('#item4 .itemInfo').css('display', 'none');
         }
     )

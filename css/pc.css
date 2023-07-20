@@ -317,12 +317,6 @@ nav .depth2.active{
     color: #fff;
     font-weight: bold;
 }
-@media(min-width: 1060px){
-    #item-menu a > span{font-size: 1.7em;}
-}
-@media(max-width: 900px){
-    #item-menu a > span{font-size: 0.7em;}
-}
 #item-menu .aromatic a span{
     opacity: 1;
     left: 25%;
@@ -336,6 +330,12 @@ nav .depth2.active{
 #item-menu > div.active{
     opacity: 1;
     transition: 0.7s;
+}
+@media(min-width: 1060px){
+    #item-menu a > span{font-size: 1.7em;}
+}
+@media(max-width: 900px){
+    #item-menu a > span{font-size: 0.7em;}
 }
 
 
