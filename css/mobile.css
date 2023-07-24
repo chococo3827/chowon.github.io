@@ -2,8 +2,9 @@
 :root{
     --main-green: #cedacc;
     --main-pink: #f2e1e7;
-    --main-brown: #dacec0;
-    --main-darkgreen: #303c30;
+    --main-brown: #E1D7C6;
+    /* --main-darkgreen: #303c30; */
+    --main-darkgreen: #8D7B68;
 }
 *{
     margin: 0 auto;
@@ -22,6 +23,9 @@ body{
     background-repeat: no-repeat;
     font-family: 'Gowun Dodum', sans-serif;
 }
+
+
+
 /* header */
 header{
     width: 100%;
@@ -68,13 +72,12 @@ nav .depth1.active{
     display: block;
 }
 nav .depth1 > li{
-    width: 100%;
+    width: 150px;
     position: relative;
     padding-bottom: 10%;
 }
 nav .depth1 > li > a{
     width: 100%;
-    font-weight: bold;
 }
 /* @media(min-width: 977px){
     nav .depth1 > li > a{font-size: 1.1em;}
@@ -82,30 +85,25 @@ nav .depth1 > li > a{
     nav .depth2 > li > a{font-size: 0.9em;}
 } */
 @media(max-width: 767px){
-    nav .depth1 > li > a{font-size: 0.7em;}
+    nav .depth1 > li > a{font-size: 0.9em;}
     header h1{font-size: 1em;}
-    nav .depth2 > li > a{font-size: 0.5em;}
+    /* nav .depth2 > li > a{font-size: 0.5em;} */
 }
 
 /* header icon */
 header .depth1-icon{
-    width: 40%;
+    width: 50%;
     display: flex;
-    margin-right: 5%;
 }
-.depth1-icon li > a > img{
-    width: 90%;
+.depth1-icon li img{
+    width: 20px;
 }
-/* 수정 */
 .depth1-icon li button{
     background: none;
     border: none;
 }
-.depth1-icon li button img{
-    width: 90%;
-}
-.depth1-icon li{
-    margin-left: 5%;
+.depth1-icon li #search{
+    display: none;
 }
 
 /* depth2 */
@@ -204,7 +202,7 @@ nav .depth2.active{
 
 
 
-/* main item */
+/* Best item */
 .main-item{
     width: 100%;
     margin: 0 auto;
@@ -217,7 +215,7 @@ nav .depth2.active{
     text-align: center;
 }
 #item1{
-    width: 50%;
+    width: 95%;
     display: block;
     /* padding-top: 5%; */
     opacity: 0;
@@ -225,7 +223,7 @@ nav .depth2.active{
 }
 #item1 a img{width: 100%;}
 #item2{
-    width: 50%;
+    width: 95%;
     display: block;
     /* margin-top: 20%; */
     /* margin-bottom: 5%; */
@@ -234,7 +232,7 @@ nav .depth2.active{
 }
 #item2 a img{width: 100%;}
 #item3{
-    width: 50%;
+    width: 95%;
     display: block;
     /* padding-top: 5%; */
     opacity: 0;
@@ -242,7 +240,7 @@ nav .depth2.active{
 }
 #item3 a img{width: 100%;}
 #item4{
-    width: 50%;
+    width: 95%;
     display: block;
     /* padding-top: 5%; */
     opacity: 0;
@@ -281,21 +279,21 @@ nav .depth2.active{
 .main-item h1{
     color: #fff;
     /* font-size: 5em; */
-    margin-left: 42%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 @media(min-width: 977px){
     #items .itemInfo{font-size: 1em;}
     .main-item h1{font-size: 5em;}
 }
 @media(max-width: 900px){
-    #items .itemInfo{font-size: 0.8em;}
+    #items .itemInfo{font-size: 0.9em;}
     .main-item h1{font-size: 4em;}
 }
 @media(max-width: 767px){
-    #items .itemInfo{font-size: 0.7em;}
-    .main-item h1{font-size: 2.5em;}
+    #items .itemInfo{font-size: 0.8em;}
+    .main-item h1{font-size: 2.7em;}
 }
 
 
@@ -304,14 +302,15 @@ nav .depth2.active{
 
 /* item menu */
 .menu{
-    background-color: rgb(48, 60, 48);
+    background-color: var(--main-darkgreen);
     width: 100%;
     text-align: center;
-    padding-top: 1%;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 .menu h1{
-    padding: 1%;
     color: #fff;
+    padding-bottom: 5%;
 }
 .menu h4{
     color: #ddd;
@@ -321,33 +320,36 @@ nav .depth2.active{
     flex-wrap: wrap;
     padding: 2%;
     padding-top: 4%;
-    padding-bottom: 5%;
 }
 .florist, .green, .woody, .aromatic, .chupre{
+    width: 30%;
     position: relative;
-    width: 26%;
+    margin-top: 10%;
 }
 .florist img, .green img, .woody img, .aromatic img, .chupre img{
-    width: 100%;
+    width: 90%;
     border-radius: 50%;
+}
+.aromatic img{
+    margin-left: 30%;
+}
+.chupre img{
+    margin-left: -50%;
 }
 #item-menu a > span{
     position: absolute;
-    top: 42%;
-    left: 30%;
+    top: 40%;
+    left: 25%;
     z-index: 9;
-    /* font-size: 1.7em; */
+    font-size: 0.8em;
     color: #fff;
     font-weight: bold;
 }
 #item-menu .aromatic a span{
-    align-items: center;
-    left: 25%;
+    left: 45%;
 }
 #item-menu .chupre a span{
-    align-items: center;
-    /* top: 40%; */
-    left: 15%;
+    left: -22%;
 }
 #item-menu > div{
     /* opacity: 0.5; */
@@ -360,10 +362,7 @@ nav .depth2.active{
     #item-menu a > span{font-size: 1.7em;}
 }
 @media(max-width: 900px){
-    #item-menu a > span{font-size: 0.7em;}
-}
-@media(max-width: 767px){
-    /* #item-menu a > span{font-size: 0.6em;} */
+    #item-menu a > span{font-size: 0.9em;}
 }
 
 
@@ -372,14 +371,14 @@ nav .depth2.active{
 /* 매장안내 */
 .way{
     width: 90%;
-    position: relative;
     background-color: var(--main-brown);
     display: flex;
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     margin-top: 5%;
     margin-bottom: 5%;
-
+    
     flex-direction: column-reverse;
+    position: relative;
 }
 .way img{
     width: 100%;
@@ -387,21 +386,16 @@ nav .depth2.active{
 }
 .way button{
     position: absolute;
-    bottom: 50%;
-    right: 10%;
-    width: 30%;
-    height: 5%;
+    top: 40%;
+    right: 5%;
+    padding: 2% 3%;
     background-color: #815c43;
-    padding: 1%;
-    padding-bottom: 2.5%;
     border: none;
 }
 .way a button{
-    /* font-size: 18px; */
-    /* font-size: 1.1em; */
     color: #fff;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 0.7em;
 }
 .way #storeinfo{
     margin-bottom: 7%;
@@ -412,7 +406,6 @@ nav .depth2.active{
     margin-top: 10%;
     color: #624836;
     font-style: italic;
-
     font-size: 0.3em;
 }
 #storeinfo a button:hover{
@@ -426,8 +419,7 @@ nav .depth2.active{
     .way #storeinfo > p{font-size: 1.1em;}
 }
 @media(max-width: 900px){
-    .way a button{font-size: 0.5em;}
-    .way #storeinfo > p{font-size: 0.5em;}
+    .way #storeinfo > p{font-size: 0.7em;}
 }
 
 
@@ -437,7 +429,7 @@ nav .depth2.active{
 footer{
     background-color: var(--main-darkgreen);
     color: #fff;
-    padding: 2% 0%;
+    padding: 10% 0%;
 }
 .footerInfo{
     width: 100%;

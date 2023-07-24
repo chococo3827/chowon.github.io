@@ -1,9 +1,10 @@
 /* pc 버전 sub page */
 :root{
-    --main-green: rgb(206, 218, 204);
-    --main-pink: rgb(242, 225, 231);
-    --main-brown: rgb(218, 206, 192);
-    --main-darkgreen: #303c30;
+    --main-green: #cedacc;
+    --main-pink: #f2e1e7;
+    --main-brown: #E1D7C6;
+    /* --main-darkgreen: #303c30; */
+    --main-darkgreen: #8D7B68;
 }
 
 /* html{cursor: url(../images/cursor.png) 20 30, url(../images/cursor2.png) 20 30, url(../images/cursor3.png) 20 30,auto} */
@@ -26,7 +27,7 @@ body{
     /* background-image: url("/images/bg-forest.jpg"); */
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-family: 'Gowun Dodum', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 
@@ -37,7 +38,7 @@ header{
     display: flex;
     background-color: var(--main-brown);
     align-items: center;
-    padding: 1%;
+    padding: 0.5%;
     /* position: -webkit-sticky; */
     position: sticky;
     top: 0;
@@ -46,14 +47,14 @@ header{
     /* opacity: 0.95; */
 }
 header h1{
-    width: 15%;
+    width: 30%;
     margin-left: 3%;
 }
 header h1 img{
-    width: 100%;
+    width: 50%;
 }
 nav{
-    width: 75%;
+    width: 70%;
     padding-left: 5%;
     /* padding-right: 5%; */
     /* border: 1px solid #999; */
@@ -71,7 +72,7 @@ nav .depth1 > li > a{
     font-weight: bold;
 }
 @media(min-width: 977px){
-    nav .depth1 > li > a{font-size: 1.1em;}
+    nav .depth1 > li > a{font-size: 1em;}
     header h1{font-size: 2em;}
     nav .depth2 > li > a{font-size: 0.9em;}
 }
@@ -83,15 +84,40 @@ nav .depth1 > li > a{
 
 /* header icon */
 header .depth1-icon{
-    width: 10%;
+    width: 25%;
     display: flex;
-    margin-right: 5%;
 }
-.depth1-icon li > a > img{
-    width: 30px;
+header .depth1-icon #search{
+    display: flex;
 }
-.depth1-icon li button{
+.depth1-icon li img{
+    width: 25px;
+    /* border: 1px solid black; */
+}
+.depth1-icon li #search button{
+    background: none;
+    border: none;
+}
+.depth1-icon li #search input{
+    border: none;
+    border-bottom: 2px solid black;
+    background: none;
+}
+.depth1-icon li #search input[type=text]:focus{
+    outline: none;
+}
+.depth1-icon li:nth-child(3){
+    /* margin-left: -5%; */
+}
+
+/* 모바일 메뉴버튼 */
+.depth1-icon li #m_menu{
+    background: none;
+    border: none;
     display: none;
+}
+.depth1-icon li #m_menu img{
+    width: 90%;
 }
 
 /* depth2 */
@@ -105,12 +131,9 @@ nav .depth2{
 nav .depth2 > li{
     padding: 10% 0px;
 }
-nav .depth2 > li > a{
-    font-size: 14px;
-}
 nav .depth2 > li > a:hover{
-    color: brown;
-    font-weight: 800;
+    color: #617A55;
+    border-bottom: 1px solid #617A55;
 }
 /* depth2 위치 조정 */
 nav .depth2{
@@ -155,18 +178,19 @@ nav .depth2.active{
 }
 #brand #info h1{
     margin-bottom: 10%;
-    font-size: 2vw;
+    font-size: 3em;
 }
 #brand #info h3{
     margin-top: 5%;
-    margin-left: 7%;
-    font-size: 1.1vw;
+    margin-left: -5%;
+    font-size: 1.3em;
     margin-bottom: 10%;
 }
 #brand #info h4{
     margin-top: 4%;
+    margin-left: 10%;
     opacity: 0.8;
-    font-size: 0.9vw;
+    font-size: 1em;
 }
 
 
@@ -175,17 +199,17 @@ nav .depth2.active{
 .contents{
     width: 100%;
     background-color: var(--main-darkgreen);
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 .contents h1{
     text-align: center;
     color: #fff;
-    font-size: 2vw;
+    font-size: 3em;
 }
 .contents .content{
     display: flex;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 .content #movie{
     width: 30%;
@@ -201,12 +225,12 @@ nav .depth2.active{
 .content #movie_info h3{
     margin-bottom: 10%;
     font-style: italic;
-    font-size: 1vw;
+    font-size: 1.5em;
 }
 .content #movie_info p{
     margin-bottom: 8%;
-    font-style: italic;
-    font-size: 0.9vw;
+    /* font-style: italic; */
+    font-size: 1.1em;
 }
 
 
@@ -227,17 +251,16 @@ nav .depth2.active{
     background-color: var(--main-darkgreen);
 }
 #products .slide a img{
-    width: 95%;
-    border: none
+    width: 90%;
 }
 #products .slide a div span{
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 17px;
 }
 #products .slide a div p{
     font-style: italic;
     /* padding-top: 3%; */
-    font-size: 0.85vw;
+    font-size: 15px;
 }
 .product .bx-wrapper{
     border: none;
@@ -250,7 +273,7 @@ nav .depth2.active{
     color: #fff;
     text-align: center;
     padding-bottom: 4%;
-    font-size: 3vw;
+    font-size: 3em;
 }
 
 

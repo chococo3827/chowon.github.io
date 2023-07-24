@@ -1,9 +1,10 @@
 /* mobile 버전 sub page */
 :root{
-    --main-green: rgb(206, 218, 204);
-    --main-pink: rgb(242, 225, 231);
-    --main-brown: rgb(218, 206, 192);
-    --main-darkgreen: rgb(48, 60, 48);
+    --main-green: #cedacc;
+    --main-pink: #f2e1e7;
+    --main-brown: #E1D7C6;
+    /* --main-darkgreen: #303c30; */
+    --main-darkgreen: #8D7B68;
 }
 *{
     margin: 0 auto;
@@ -71,12 +72,12 @@ nav .depth1.active{
     display: block;
 }
 nav .depth1 > li{
-    width: 100%;
+    width: 150px;
     position: relative;
+    padding-bottom: 10%;
 }
 nav .depth1 > li > a{
     width: 100%;
-    font-weight: bold;
 }
 /* @media(min-width: 977px){
     nav .depth1 > li > a{font-size: 1.1em;}
@@ -84,31 +85,27 @@ nav .depth1 > li > a{
     nav .depth2 > li > a{font-size: 0.9em;}
 } */
 @media(max-width: 767px){
-    nav .depth1 > li > a{font-size: 0.7em;}
+    nav .depth1 > li > a{font-size: 0.9em;}
     header h1{font-size: 1em;}
-    nav .depth2 > li > a{font-size: 0.5em;}
+    /* nav .depth2 > li > a{font-size: 0.5em;} */
 }
 
 /* header icon */
 header .depth1-icon{
-    width: 40%;
+    width: 50%;
     display: flex;
-    margin-right: 5%;
 }
-.depth1-icon li > a > img{
-    width: 90%;
+.depth1-icon li img{
+    width: 20px;
 }
-/* 수정 */
 .depth1-icon li button{
     background: none;
     border: none;
 }
-.depth1-icon li button img{
-    width: 90%;
+.depth1-icon li #search{
+    display: none;
 }
-.depth1-icon li{
-    margin-left: 5%;
-}
+
 
 /* depth2 */
 nav .depth2{
@@ -151,44 +148,44 @@ nav .depth2.active{
 .main{
     width: 100%;
     background-color: var(--main-darkgreen);
-    position: relative;
+    /* position: relative; */
     padding: 2%;
 }
 .main #brand{
     display: flex;
+    flex-direction: column;
 }
 #brand img{
-    width: 45%;
+    width: 90%;
     /* margin-left: 50%; */
     --animate-duration: 3s;
 }
 #brand #info{
-    position: absolute;
+    /* position: absolute; */
     color: #fff;
     top: 15%;
     /* right: 10%; */
     left: 5%;
 }
 #brand #info h1{
-    margin-bottom: 10%;
-    font-size: 2vw;
+    margin-bottom: 7%;
+    font-size: 2em;
+    text-align: center;
 }
 #brand #info h3{
     /* margin-top: 5%; */
-    /* margin-left: 7%; */
-    font-size: 1.1vw;
-    margin-bottom: 9%;
+    margin-left: 7%;
+    font-size: 1em;
+    margin-bottom: 5%;
 }
 #brand #info h4{
     /* margin-top: 4%; */
+    margin-left: 7%;
+    font-size: 13px;
+    margin-bottom: 5%;
     opacity: 0.8;
-    font-size: 0.9vw;
 }
-@media(max-width: 450px){
-    #brand #info h4{
-        font-size: 0.2em;
-    }
-}
+
 
 
 
@@ -196,40 +193,39 @@ nav .depth2.active{
 .contents{
     width: 100%;
     background-color: var(--main-darkgreen);
-    padding-top: 10%;
+    padding-top: 20%;
     padding-bottom: 3%;
 }
 .contents h1{
     text-align: center;
     color: #fff;
-    font-size: 2vw;
+    font-size: 2em;
 }
 .contents .content{
     display: flex;
+    flex-direction: column;
     margin-top: 5%;
 }
 .content #movie{
-    width: 30%;
+    width: 90%;
     margin-top: 5%;
 }
 .content #movie img{
     width: 100%;
 }
 .content #movie_info{
-    color: #eee;
-    margin-right: -15%;
-    margin-top: 2%;
-    z-index: 2;
+    color: #fff;
+    margin-top: 10%;
+    /* z-index: 2; */
 }
 .content #movie_info h3{
     margin-bottom: 10%;
     font-style: italic;
-    font-size: 1vw;
+    font-size: 1em;
 }
 .content #movie_info p{
-    margin-bottom: 8%;
-    font-style: italic;
-    font-size: 0.9vw;
+    margin-bottom: 7%;
+    font-size: 0.8em;
 }
 
 
@@ -237,30 +233,32 @@ nav .depth2.active{
 /* product slide */
 .product{
     width: 100%;
-    padding-top: 5%;
+    padding-top: 15%;
     padding-bottom: 3%;
     background-color: var(--main-darkgreen);
 }
 #products .slide a div{
-    padding-left: 37%;
-    /* background-color: var(--main-darkgreen); */
+    text-align: center;
     color: #fff;
 }
 #products .slide{
     background-color: var(--main-darkgreen);
 }
 #products .slide a img{
-    width: 95%;
-    border: 1px solid black;
+    width: 90%;
+    /* border: 1px solid #fff; */
 }
 #products .slide a div span{
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 14px;
 }
 #products .slide a div p{
     font-style: italic;
-    /* padding-top: 3%; */
-    font-size: 0.85vw;
+    padding-bottom: 30%;
+    font-size: 11px;
+}
+.product .bx-viewport{
+    padding-bottom: 30%;
 }
 .product .bx-wrapper{
     border: none;
@@ -273,9 +271,8 @@ nav .depth2.active{
     color: #fff;
     text-align: center;
     padding-bottom: 4%;
-    font-size: 2.2vw;
+    font-size: 2em;
     font-style: italic;
-    /* text-decoration: underline; */
 }
 
 
@@ -300,10 +297,10 @@ nav .depth2.active{
     position: absolute;
     color: #fff;
     top: 80%;
-    left: 45%;
+    left: 40%;
 }
 .shop a button{
-    font-size: 1.2vw;
+    font-size: 0.7em;
     color: #fff;
     background-color: var(--main-darkgreen);
     border: none;
@@ -313,7 +310,7 @@ nav .depth2.active{
 }
 .shop a button:hover{
     outline: 3px solid #fff;
-    background-color: rgba(48, 60, 48, 0);
+    background-color: #303c3000;
     color: var(--main-green);
     transition: 0.2s;
 }
@@ -324,7 +321,7 @@ nav .depth2.active{
 footer{
     background-color: var(--main-darkgreen);
     color: #fff;
-    padding: 2% 0%;
+    padding: 7% 0%;
 }
 .footerInfo{
     width: 100%;

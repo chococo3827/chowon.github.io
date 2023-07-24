@@ -21,7 +21,7 @@ $(function(){
         }
         $('.slider .sliders a').removeClass('active');
         $('.slider .sliders a').eq(num).addClass('active');
-    },3000)
+    },5000)
 
     // 스크롤시 brand info글자 fade 효과
     $(window).scroll(function(){

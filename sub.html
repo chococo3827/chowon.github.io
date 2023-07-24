@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rest in nature-sub</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gowun+Dodum&family=Hahmlet:wght@200&family=Noto+Sans+KR:wght@300&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/sub-pc.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="css/sub-mobile.css" media="screen and (max-width: 767px)">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -20,7 +21,9 @@
     <header>
         <h1>
             <!-- <a href="index.html">rest in nature</a> -->
-            <img src="images/title-2.png" alt="title">
+            <a href="./">
+                <img src="images/title-2.png" alt="title">
+            </a>
         </h1>
         <nav>
             <ul class="depth1">
@@ -71,9 +74,16 @@
             </ul>
         </nav>
         <ul class="depth1-icon">
-            <li><a href="./"><img src="images/shopping.png" alt=""></a></li>
+            <li>
+                <form action="#">
+                    <div id="search">
+                        <input type="text" name="search" value="">
+                        <button><img src="images/search.png" alt=""></button>
+                    </div>
+                </form>
+            </li>
             <li><a href="./"><img src="images/person.png" alt=""></a></li>
-            <li><a href="./"><img src="images/search.png" alt=""></a></li>
+            <li><a href="./"><img src="images/shopping.png" alt=""></a></li>
             <!-- 모바일용 버튼 -->
             <li><button id="m_menu"><img src="images/menu.png" alt=""></button></li>
         </ul>
@@ -85,19 +95,22 @@
 
     <div class="main">
         <section id="brand">
-            <img src="images/brand.jpg" alt="brand" class="animate__animated animate__fadeIn">
             <div id="info">
                 <h1 class="animate__animated animate__fadeInDown animate__delay-0.5s">The Way to Inner Rest</h1>
                 <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Memories that are remembered with invisible scents</h3>
                 <h3 class="animate__animated animate__fadeInDown animate__delay-2s">woud become a good stimulus and remain strong.</h3>
                 <h4 class="animate__animated animate__fadeInDown animate__delay-3s">눈에 보이지 않는 향기로 기억하는 추억은 좋은 자극이 되어 강렬하게 남습니다.</h4>
             </div>
+            <img src="images/brand.jpg" alt="brand" class="animate__animated animate__fadeIn">
         </section>
     </div>
 
     <div class="contents">
         <h1>Florist Fabric Spray</h1>
         <section class="content">
+            <article id="movie">
+                <img src="images/movie.gif" alt="movie">
+            </article>
             <article id="movie_info">
                 <h3>꽃 한 송이를 그대로</h3>
                 <p>신선한 꽃을 한 아름 따다 만든 풍성한 꽃다발</p>
@@ -107,9 +120,6 @@
                 <p>동물 원료나 동물 유래 원료를 포함하기 않습니다.</p>
                 <p>원료부터 완제품까지 걱정 없는 깨끗한 환경에서 진행합니다.</p>
             </article>
-            <article id="movie">
-                <img src="images/movie.gif" alt="movie">
-            </article>
         </section>
     </div>
 
@@ -118,7 +128,7 @@
         <div id="products">
             <div class="slide">
                 <a href="index.html">
-                    <img src="images/product1.png" alt="product1">
+                    <img src="images/product1-3.png" alt="product1">
                     <div>
                         <span>플로리스트 섬유 스프레이</span>
                         <p>Fragrance Guide - Florist</p>
@@ -127,7 +137,7 @@
             </div>
             <div class="slide">
                 <a href="index.html">
-                    <img src="images/product2.jpg" alt="product2">
+                    <img src="images/product2-3.png" alt="product2">
                     <div>
                         <span>딥 허브 섬유 스프레이</span>
                         <p>Fragrance Guide - Green</p>
@@ -136,7 +146,7 @@
             </div>
             <div class="slide">
                 <a href="index.html">
-                    <img src="images/product3.png" alt="product3">
+                    <img src="images/product3-3.png" alt="product3">
                     <div>
                         <span>프레쉬 그라스 섬유 스프레이</span>
                         <p>Fragrance Guide - Green</p>
@@ -145,7 +155,7 @@
             </div>
             <div class="slide">
                 <a href="index.html">
-                    <img src="images/product4.jpg" alt="product4">
+                    <img src="images/product4-3.png" alt="product4">
                     <div>
                         <span>포레스트 우드 디퓨저</span>
                         <p>Fragrance Guide - Woody</p>
@@ -154,7 +164,7 @@
             </div>
             <div class="slide">
                 <a href="index.html">
-                    <img src="images/product5.jpg" alt="product5">
+                    <img src="images/product5-3.png" alt="product5">
                     <div>
                         <span>워터리 그린 디퓨저</span>
                         <p>Fragrance Guide - Aqua</p>

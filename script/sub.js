@@ -13,7 +13,7 @@ $(function(){
     // 제품 bxslider
     $('#products').bxSlider({
         slideWidth: 615,
-        minSlides: 2,
+        minSlides: 1,
         maxSlides: 3,
         moveSlides: 1,
         // slideMargin: 7
