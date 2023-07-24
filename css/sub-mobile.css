@@ -237,6 +237,13 @@ nav .depth2.active{
     padding-bottom: 3%;
     background-color: var(--main-darkgreen);
 }
+.product h1{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 4%;
+    font-size: 2em;
+    font-style: italic;
+}
 #products .slide a div{
     text-align: center;
     color: #fff;
@@ -254,25 +261,15 @@ nav .depth2.active{
 }
 #products .slide a div p{
     font-style: italic;
-    padding-bottom: 30%;
     font-size: 11px;
-}
-.product .bx-viewport{
-    padding-bottom: 30%;
 }
 .product .bx-wrapper{
     border: none;
     box-shadow: none;
+    background-color: var(--main-darkgreen);
 }
 .product .bx-pager{
     display: none;
-}
-.product h1{
-    color: #fff;
-    text-align: center;
-    padding-bottom: 4%;
-    font-size: 2em;
-    font-style: italic;
 }
 
 

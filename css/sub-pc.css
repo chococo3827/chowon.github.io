@@ -175,6 +175,7 @@ nav .depth2.active{
     color: #fff;
     top: 25%;
     right: 17%;
+    z-index: 2;
 }
 #brand #info h1{
     margin-bottom: 10%;
@@ -209,17 +210,19 @@ nav .depth2.active{
 }
 .contents .content{
     display: flex;
+    flex-direction: row-reverse;
     margin-top: 7%;
+    margin-left: 15%;
 }
 .content #movie{
-    width: 30%;
+    width: 35%;
 }
 .content #movie img{
     width: 100%;
 }
 .content #movie_info{
     color: #eee;
-    margin-right: -15%;
+    /* margin-right: -15%; */
     margin-top: 2%;
 }
 .content #movie_info h3{
@@ -265,6 +268,7 @@ nav .depth2.active{
 .product .bx-wrapper{
     border: none;
     box-shadow: none;
+    background-color: var(--main-darkgreen);
 }
 .product .bx-pager{
     display: none;
