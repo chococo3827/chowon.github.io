@@ -63,7 +63,7 @@ nav .depth1{
     right: 0;
     top: 60%;
     /* padding-top: 10px; */
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
     /* padding-right: 14%; */
     background-color: var(--main-brown);
     display: none;
@@ -79,6 +79,22 @@ nav .depth1 > li{
 nav .depth1 > li > a{
     width: 100%;
 }
+.depth1 li .minus{
+    width: 9%;
+    float: right;
+    margin-top: 3%;
+    display: none;
+}
+.depth1 li .minus.active{display: block;}
+
+.depth1 li .plus{
+    width: 9%;
+    float: right;
+    margin-top: 4%;
+    display: none;
+}
+.depth1 li .plus.active{display: block;}
+
 /* @media(min-width: 977px){
     nav .depth1 > li > a{font-size: 1.1em;}
     header h1{font-size: 2em;}
@@ -109,15 +125,16 @@ header .depth1-icon{
 /* depth2 */
 nav .depth2{
     width: 100%;
-    padding-left: 20%;
-    right: 20%;
-    /* padding-bottom: 50%; */
-    padding-top: 10%;
-
-    display: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
 }
 nav .depth2 > li{
-    padding: 10% 0px;
+    padding: 6% 0px;
+    font-size: 12px;
+}
+nav .depth2 > li > a{
+    color: gray;
 }
 nav .depth2 > li > a:hover{
     color: brown;
@@ -125,19 +142,17 @@ nav .depth2 > li > a:hover{
 }
 /* depth2 위치 조정 */
 nav .depth2{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     /* border: 1px solid #999; */
     background: var(--main-brown);
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.3s;
+    /* overflow: hidden; */
+    display: none;
 }
-nav .depth2.active{
-    height: 285px;
+/* nav .depth2.active{
+    height: auto;
     opacity: 1;
-}
+} */
 
 
 
@@ -195,7 +210,7 @@ nav .depth2.active{
 .brand-info #info p{
     font-weight: 500;
     font-size: 0.9em;
-    font-style: italic;
+    /* font-style: italic; */
     margin-bottom: 5%;
     color: #eee;
 }
@@ -293,7 +308,7 @@ nav .depth2.active{
 }
 @media(max-width: 767px){
     #items .itemInfo{font-size: 0.8em;}
-    .main-item h1{font-size: 2.7em;}
+    .main-item h1{font-size: 2em;}
 }
 
 
@@ -311,6 +326,7 @@ nav .depth2.active{
 .menu h1{
     color: #fff;
     padding-bottom: 5%;
+    font-size: 2em;
 }
 .menu h4{
     color: #ddd;

@@ -145,4 +145,17 @@ $(function(){
     $('#m_menu').click(function(){
         $('nav .depth1').slideToggle('fast');
     })
+    
+    $('.depth1 li').click(function(){
+        $(this).children('.depth2').slideToggle('fast');
+
+        if($(this).children('.plus').hasClass('active')){
+            $(this).children('.plus').removeClass('active');
+            $(this).children('.minus').addClass('active');
+        }
+        else{
+            $(this).children('.minus').removeClass('active');
+            $(this).children('.plus').addClass('active');
+        }
+    })
 })
