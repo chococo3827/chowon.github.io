@@ -375,13 +375,11 @@ nav .depth2.active{
     position: relative;
     background-color: var(--main-brown);
     display: flex;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     margin-top: 5%;
     margin-bottom: 5%;
 }
 .way img{
     width: 50%;
-    margin-right: 0px;
 }
 .way button{
     position: absolute;
@@ -409,6 +407,7 @@ nav .depth2.active{
     font-weight: 600;
 }
 .way #storeinfo{
+    width: 50%;
     margin-bottom: 7%;
     margin-left: 2%;
 }
@@ -418,7 +417,7 @@ nav .depth2.active{
     color: #624836;
     font-style: italic;
 }
-#storeinfo a button:hover{
+.way a button:hover{
     background: none;
     outline: 1px solid #815c43;
     transition: 0.2s;

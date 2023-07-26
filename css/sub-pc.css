@@ -228,6 +228,7 @@ nav .depth2.active{
 }
 .content #movie img{
     width: 100%;
+    margin-left: -20%;
 }
 .content #movie_info{
     color: #eee;
