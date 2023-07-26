@@ -38,7 +38,11 @@ header{
     top: 0;
     left: 0;
     z-index: 999;
-    /* opacity: 0.95; */
+    transition: 0.3s;
+}
+header.active{
+    padding: 0%;
+    opacity: 0.8;
 }
 header h1{
     width: 30%;

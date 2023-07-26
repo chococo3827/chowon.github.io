@@ -44,7 +44,11 @@ header{
     top: 0;
     left: 0;
     z-index: 999;
-    /* opacity: 0.95; */
+    transition: 0.3s;
+}
+header.active{
+    padding: 0%;
+    opacity: 0.8;
 }
 header h1{
     width: 30%;
@@ -102,6 +106,7 @@ header .depth1-icon #search{
     border: none;
     border-bottom: 2px solid black;
     background: none;
+    font-size: 1em;
 }
 .depth1-icon li #search input[type=text]:focus{
     outline: none;
@@ -109,6 +114,7 @@ header .depth1-icon #search{
 .depth1-icon li:nth-child(3){
     /* margin-left: -5%; */
 }
+
 
 /* 모바일 메뉴버튼 */
 .depth1-icon li #m_menu{
@@ -118,6 +124,9 @@ header .depth1-icon #search{
 }
 .depth1-icon li #m_menu img{
     width: 90%;
+}
+.depth1 li .plus, .depth1 li .minus{
+    display: none;
 }
 
 /* depth2 */

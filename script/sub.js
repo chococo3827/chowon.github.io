@@ -10,6 +10,15 @@ $(function(){
         }
     )
 
+    // 스크롤 내리면 header 변함
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('header').addClass('active');
+        }else{
+            $('header').removeClass('active');
+        }
+    })
+
     // 제품 bxslider
     $('#products').bxSlider({
         slideWidth: 615,

@@ -96,6 +96,15 @@ $(function(){
         return false;
     })
 
+    // 스크롤 내리면 header 변함
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('header').addClass('active');
+        }else{
+            $('header').removeClass('active');
+        }
+    })
+
     // best item hover 효과
     $('#item1').hover(
         function(){
