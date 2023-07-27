@@ -382,6 +382,6 @@ footer > p{
 @media(max-width: 900px){
     footer h1{font-size: 1em;}
     .footerInfo #sns li a{font-size: 0.8em;}
-    .footerInfo #contact li{font-size: 0.8em;}
+    .footerInfo #contact li{font-size: 0.7em;}
     footer > p{font-size: 0.8em;}
 }
