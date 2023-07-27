@@ -5,6 +5,7 @@
     --main-brown: #E1D7C6;
     /* --main-darkgreen: #303c30; */
     --main-darkgreen: #8D7B68;
+    /* --main-darkgreen: #bca996; */
 }
 *{
     margin: 0 auto;
@@ -209,7 +210,7 @@ nav .depth2.active{
 .brand-info #info p{
     font-weight: 500;
     font-size: 20px;
-    font-style: italic;
+    /* font-style: italic; */
     margin-bottom: 5%;
     color: #eee;
 }
@@ -221,6 +222,7 @@ nav .depth2.active{
     width: 100%;
     margin: 0 auto;
     background-color: var(--main-darkgreen);
+    overflow: hidden;
 }
 .main-item #items{
     width: 100%;
@@ -322,46 +324,52 @@ nav .depth2.active{
 }
 #item-menu{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 2%;
     padding-top: 4%;
     padding-bottom: 10%;
 }
+#item-menu a{
+    width: 12%;
+}
 .florist, .green, .woody, .aromatic, .chupre{
     position: relative;
-    width: 13%;
+    margin: 0;
+    width: 100%;
+    transition: 0.7s;
 }
 .florist img, .green img, .woody img, .aromatic img, .chupre img{
     width: 100%;
     border-radius: 50%;
 }
-#item-menu a > span{
+#item-menu div > span{
     position: absolute;
-    top: 42%;
-    left: 30%;
-    z-index: 9;
-    /* font-size: 1.7em; */
+    top: 45%;
+    left: 33%;
+    z-index: 2;
     color: #fff;
+    font-size: 1.4em;
     font-weight: bold;
 }
-#item-menu .aromatic a span{
+/* #item-menu .aromatic a span{
     opacity: 1;
     left: 25%;
+} */
+#item-menu .chupre span{
+    left: 18%;
 }
-#item-menu .chupre a span{
-    top: 40%;
-    left: 10%;
+#item-menu > a > div{
+    filter: brightness(60%);
 }
-#item-menu > div{
-    opacity: 0.5;
+#item-menu > a > div.active{
+    filter: brightness(100%);
+    /* opacity: 1; */
+    width: 120%;
 }
-#item-menu > div.active{
-    opacity: 1;
-    transition: 0.7s;
-}
-@media(min-width: 1060px){
+/* @media(min-width: 1060px){
     #item-menu a > span{font-size: 1.7em;}
-}
+} */
 @media(max-width: 900px){
     #item-menu a > span{font-size: 0.7em;}
 }

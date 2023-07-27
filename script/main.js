@@ -73,7 +73,7 @@ $(function(){
     })
 
     // item menu hover시 opacity 1
-    $('#item-menu > div').hover(
+    $('#item-menu > a > div').hover(
         function(){
             $(this).addClass('active');
         },

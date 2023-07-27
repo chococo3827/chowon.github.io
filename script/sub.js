@@ -19,6 +19,27 @@ $(function(){
         }
     })
 
+    // movie_info 스크롤시 슬라이드
+    $(window).scroll(function(){
+        $('.content #movie_info').each(function(){
+            let bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            let bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if(bottom_of_window > bottom_of_element){
+                $(this).addClass('in');
+            }
+        })
+
+        $('.content #movie').each(function(){
+            let bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            let bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if(bottom_of_window > bottom_of_element){
+                $(this).addClass('in');
+            }
+        })
+    })
+
     // 제품 bxslider
     $('#products').bxSlider({
         slideWidth: 615,
