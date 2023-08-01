@@ -169,14 +169,14 @@ nav .depth2.active{
     width: 100%;
     background-color: var(--main-darkgreen);
     position: relative;
-    padding: 2%;
+    /* padding: 2%; */
 }
 .main #brand{
     display: flex;
 }
 #brand img{
     width: 45%;
-    margin-left: 10%;
+    margin-left: 7%;
     --animate-duration: 3s;
 }
 #brand #info{
@@ -192,13 +192,13 @@ nav .depth2.active{
 }
 #brand #info h3{
     margin-top: 5%;
-    margin-left: -5%;
+    /* margin-left: -5%; */
     font-size: 1.3em;
     margin-bottom: 10%;
 }
 #brand #info h4{
     margin-top: 4%;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     opacity: 0.8;
     font-size: 1em;
 }
