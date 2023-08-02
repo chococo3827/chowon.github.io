@@ -1,5 +1,8 @@
 # chowon's portfolio
 
+자연의 향기라는 브랜드 이미지에 맞게 메인색으로 연한 브라운톤을 사용했으며 백그라운드 이미지로 숲 이미지를 넣었습니다.
+애니메이션은 여유가 있는 것처럼 보이도록 되도록 너무 빠르지 않은 속도로 넣었습니다.
+
     // movie_info 스크롤시 슬라이드
     // let movie_info = document.querySelector('#movie_info');
     // let movie = document.querySelector('#movie');
