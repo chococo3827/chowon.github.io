@@ -20,6 +20,23 @@ $(function(){
     })
 
     // movie_info 스크롤시 슬라이드
+    // let movie_info = document.querySelector('#movie_info');
+    // let movie = document.querySelector('#movie');
+
+    // window.addEventListener("scroll", function(){
+    //     let value = window.scrollY;
+    //     console.log("scrollY", this.scrollY);
+
+    //     if(value > 1350){
+    //         movie_info.style.animation = 'slideOutRight 2s ease-out';
+    //         movie.style.animation = 'slideOutLeft 2s ease-out';
+    //     }
+    //     else{
+    //         movie_info.style.animation = 'slideInRight 2s ease-out';
+    //         movie.style.animation = 'slideInLeft 2s ease-out';
+    //     }
+    // })
+
     $(window).scroll(function(){
         $('.content #movie_info').each(function(){
             let bottom_of_element = $(this).offset().top + $(this).outerHeight();

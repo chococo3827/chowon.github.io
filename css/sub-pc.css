@@ -222,7 +222,7 @@ nav .depth2.active{
     display: flex;
     flex-direction: row-reverse;
     margin-top: 7%;
-    margin-left: 15%;
+    margin-left: 25%;
 }
 .content #movie{
     width: 35%;
@@ -235,7 +235,7 @@ nav .depth2.active{
 }
 .content #movie img{
     width: 100%;
-    margin-left: -40%;
+    margin-left: -60%;
 }
 .content #movie_info{
     color: #eee;
