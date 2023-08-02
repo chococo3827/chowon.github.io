@@ -17,4 +17,4 @@
     //         movie.style.animation = 'slideInLeft 2s ease-out';
     //     }
     // })
-  # slideOutRight와 slideOutLeft를 제대로 구현하지 못한 것이 아쉬웠습니다.
+    # slideOutRight와 slideOutLeft를 제대로 구현하지 못한 것이 아쉬웠습니다.
